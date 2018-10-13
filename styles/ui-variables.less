@@ -10,31 +10,81 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+//--------------------
+
+//--------Go!---------
+//Style Atom Green Utopia
+//Author: TechnoNinja
+//My variables for interface design
+
+//--start-user-variables--
+
+//-----text------
+@user-variable-text-color:                  hsl(66,   8%, 67%); //sand
+@user-variable-text-color-selected:         hsl(108, 27%, 60%); //calm light-green
+@user-variable-text-color-subtle:           hsl(55,   8%, 57%); //muted
+@user-variable-text-color-highlight:        hsl(108, 27%, 50%); //calm green
+@user-variable-text-color-info:             hsl(179, 92%, 30%); //turquoise
+@user-variable-text-color-warning:          hsl(32, 84%, 55%); //hot
+@user-variable-text-color-error:            hsl(11, 86%, 46%); //very hot
+
+//---site-color
+@user-variable-ui-site-color-1:             hsl(275, 10%, 40%); //violet muffled
+@user-variable-ui-site-color-2:             hsl(291, 21%, 45%); //pink muffled
+@user-variable-ui-site-color-3:             hsl(224, 21%, 40%); //blue muffled
+@user-variable-ui-site-color-4:             hsl(12, 18%, 46%); //brown muffled
+@user-variable-ui-site-color-5:             hsl(177, 17%, 40%); //overcast
+
+
+//---for-lists.less--
+@user-variable-text-list-tree-status:       darken(@user-variable-text-color, 9%); //darkened a little
+
+//---git-status-text--
+//sorry for !important
+@user-variable-text-git-status-ignored:     hsl(0, 0%, 43%);    //gray
+@user-variable-text-git-status-added:       hsl(62, 26%, 47%);  //yellowish
+@user-variable-text-git-status-modified:    hsl(130, 29%, 43%) !important; //green
+@user-variable-text-git-status-removed:     hsl(16, 44%, 43%); //brick
+@user-variable-text-git-status-renamed:     hsl(168, 33%, 41%); //pale
+
+//---background---
+@user-variable-base-background-color:       hsl(117, 11%, 11%); //dark disguise
+@user-variable-base-border-color:           hsl(0, 0%, 27%);    //calm
+@user-variable-background-color-info:       hsl(91, 28%, 25%); //greenish
+@user-variable-background-color-success:    hsl(93, 85%, 13%); //dark green
+@user-variable-background-color-warning:    hsl(51, 89%, 16%); //autumn
+@user-variable-background-color-error:      hsl(0, 75%, 26%);  //dark red
+
+//---scrollbar---
+@user-variable-scrollbar-color: lighten(@user-variable-base-background-color, 7%);
+
+//--end-user-variables--
+
+//-------
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           @user-variable-text-color;
+@text-color-subtle:    @user-variable-text-color-subtle;
+@text-color-highlight: @user-variable-text-color-highlight;
+@text-color-selected:  @user-variable-text-color-selected;
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    @user-variable-text-color-info;
+@text-color-success: hsl(140,  44%, 62%);   //leave by default
+@text-color-warning: @user-variable-text-color-warning;
+@text-color-error:   @user-variable-text-color-error;
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
-
+@background-color-info:       @user-variable-background-color-info;
+@background-color-success:    @user-variable-background-color-success;
+@background-color-warning:    @user-variable-background-color-warning;
+@background-color-error:      @user-variable-background-color-error;
 @background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-selected:  lighten(@base-background-color, 8%); //change
+@app-background-color:       darken(@base-background-color, 5%); //change
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: @user-variable-base-background-color;
+@base-border-color:     @user-variable-base-border-color ;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -46,7 +96,7 @@
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-background-color:  lighten(@base-background-color, 4%);
 @inset-panel-border-color:     @base-border-color;
 
 @panel-heading-background-color: lighten(@base-background-color, 4%);
@@ -55,29 +105,29 @@
 @overlay-background-color: lighten(@base-background-color, 5%);
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color:          lighten(@base-background-color, 13%); //from 10% changed to 13%
+@button-background-color-hover:    lighten(@button-background-color, 5%); //from 12% changed to 5%
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 5%);
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
+@ui-site-color-1: @user-variable-ui-site-color-1; //change
+@ui-site-color-2: @user-variable-ui-site-color-2; //change
+@ui-site-color-3: @user-variable-ui-site-color-3; //change
+@ui-site-color-4: @user-variable-ui-site-color-4; //change
+@ui-site-color-5: @user-variable-ui-site-color-5; //change
 
 // Sizes
-@font-size: 12px;
+@font-size: 14px; //from 12px changed to 14px
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;

@@ -1,0 +1,34 @@
+//Thanks, to one good person Greg Pechiro.
+//I looked at his code and found such a solution.
+//Grateful Greg Pechiro https://github.com/gregpechiro.
+
+//Getting to action. I do import.
+@import "ui-variables";
+
+* {
+	box-sizing: border-box;
+}
+
+atom-workspace {
+  background-color: @app-background-color;
+}
+
+//Scrollbar appearance
+
+.scrollbars-visible-always {
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+
+   ::-webkit-scrollbar-track,
+   		::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: @user-variable-scrollbar-color;
+    border-radius: 5px;
+    box-shadow: 0 0 2px @base-border-color inset;
+  }
+}

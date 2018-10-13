@@ -1,13 +1,19 @@
 {
-  "name": "ui-theme-template",
+  "name": "atom-military-style-ui",
   "theme": "ui",
-  "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "version": "1.0.0",
+  "author": "TechnoNinja",
+  "description": "The theme Military Style for the editor Atom.",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "moderate",
+    "dark",
+    "green",
+    "khaki",
+    "military"
   ],
-  "repository": "https://github.com/atom-community/ui-theme-template",
+  "repository": "https://github.com/Evgeny-TechnoNinja/atom-military-style-theme",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

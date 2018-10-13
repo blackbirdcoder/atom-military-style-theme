@@ -4,9 +4,11 @@
 
 // Used to color git status
 
+//Added colors from my variables (ui-variables.less)
+
 .status          { color: @text-color; }
-.status-added    { color: @text-color-success; } // green
-.status-ignored  { color: @text-color-subtle; }  // faded
-.status-modified { color: @text-color-warning; } // orange
-.status-removed  { color: @text-color-error; }   // red
-.status-renamed  { color: @text-color-info; }    // blue
+.status-added    { color: @user-variable-text-git-status-added; } // changed
+.status-ignored  { color: @user-variable-text-git-status-ignored; } // changed
+.status-modified { color: @user-variable-text-git-status-modified; } // changed
+.status-removed  { color: @user-variable-text-git-status-removed; } // changed
+.status-renamed  { color: @user-variable-text-git-status-renamed; }  // changed
