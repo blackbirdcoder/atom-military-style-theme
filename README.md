@@ -1,27 +1,28 @@
-# Atom UI Theme Template
+# Custom theme for Atom editor in Military Style
 
-This is a __starter template__ for creating an Atom UI theme.
+![hi!]<img align="right" width="228" height="200" src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ocat-military.png">
 
-This template only includes the __minimum of styling__ needed and comes with a neutral look. It could already be used as a real theme, but its purpose is to serve as a basis for creating your own theme. It is documented throughout and invites you to make changes to your liking. For some inspiration take a look at other Atom themes at [atom.io/themes](https://atom.io/themes/). Or you're always free to fork a theme that already comes close to your vision.
-
-Happy theming! 🚀
-
-
-## Getting started
-
-1. Fork this repository.
-2. Continue with step 2 from [Creating a UI Theme](http://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme)
-
-If you get stuck somewhere, feel free to create an [issue](https://github.com/atom-community/ui-theme-template/issues/new).
-
-ps. Don't forget to delete the above and edit the below in your own `README.md`.
+The theme is suitable for developers who need a dark green color.
+This theme does not strain your eyesight and allows you to work in Atom for a long time.
+This topic will allow you to be more productive. Forward!
 
 
----
+## Let's start
+
+1. Installing the Atom Military Style user interface theme through Atom.
+Select [Edit > Preferences / Settings> Install]. Go to  in the search "Themes" and write "atom-military-style-ui".
+2. After installing the theme, activate it by going to the "Themes" section.
+And select the installed theme in the "UI Theme" list.
+
+## Look at the examples:
+
+<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-1.jpeg">
+
+<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-2.jpeg">
+
+<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-2.jpeg">
+
+**Note:** The syntax colors are independent of the UI theme.
 
 
-# My UI theme
-
-A short description of your theme.
-
-![A screenshot of your theme](https://cloud.githubusercontent.com/assets/378023/8842525/4215f26c-3136-11e5-9d94-d2c078a05d24.png)
+I will gladly accept all your wishes and comments.
