@@ -16,11 +16,7 @@ And select the installed theme in the "UI Theme" list.
 
 ## Look at the examples:
 
-<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-1.jpeg">
-
-<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-2.jpeg">
-
-<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-pic-2.jpeg">
+<img src="https://github.com/Evgeny-TechnoNinja/atom-military-style-theme/raw/master/images/ss-ms-pic.jpg">
 
 **Note:** The syntax colors are independent of the UI theme.
 
